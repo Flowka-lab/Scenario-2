@@ -7,9 +7,9 @@ This project is a **Streamlit demo app** for a **cosmetics / FMCG manufacturer**
 
 It builds a **multi-stage production schedule** (Mix → Transfer → Fill → Finish), visualizes it as an **interactive Gantt chart**, and lets you adjust the plan using:
 
-- 🧠 **Natural language commands** (text)  
-- 🎤 **Voice commands** (via Deepgram transcription)  
-- 🤖 **LLM intent extraction** (via OpenAI)
+-  **Natural language commands** (text)  
+-  **Voice commands** (via Deepgram transcription)  
+-  **LLM intent extraction** (via OpenAI)
 
 The goal is to showcase how modern LLMs can make production planning **more natural, interactive, and fun to demo**.
 
@@ -49,21 +49,21 @@ Orders are:
 
 ## Key Features
 
-- 🗂 **Automatic baseline schedule**
+-  **Automatic baseline schedule**
   - Reads `orders.csv` + `lines.csv`
   - Builds a feasible schedule (no double-booking of machines)
-- 📊 **Interactive Gantt chart (Altair + Streamlit)**
+-  **Interactive Gantt chart (Altair + Streamlit)**
   - Filter by product and machine
   - Limit number of orders displayed
   - Color by **Order / Product / Machine / Operation**
   - Click to highlight one order’s operations
-- 🤖 **LLM-assisted scheduling**
+-  **LLM-assisted scheduling**
   - Type natural language commands: _delay, advance, swap orders_
   - AI parses commands into structured JSON intent
-- 🎤 **Voice commands (optional)**
+-  **Voice commands (optional)**
   - Press mic button → speak your command (Deepgram STT)
   - LLM interprets the transcript and updates the schedule
-- 🧪 **Built-in debug panels**
+-  **Built-in debug panels**
   - Last transcript
   - Last interpreted command
   - Intent payload, extracted durations, etc.
@@ -84,13 +84,15 @@ Orders are:
 
 ```text
 .
-├── app.py                 # Main Streamlit app (UI + scheduling logic)
-├── nlp_extractor.py       # LLM intent extraction helper
-├── requirements.txt       # Python dependencies
+├── app.py                       # Main Streamlit app (UI + scheduling logic)
+├── nlp_extractor.py             # LLM intent extraction helper
+├── requirements.txt             # Python dependencies
+└── Docs/
+    ├── Design Document v1.pdf   # Design document of the app
 └── data/
-    ├── orders.csv         # Production orders
-    ├── lines.csv          # Available lines / machines
-    └── vrac_products.csv  # Product metadata (rates, families, etc.)
+    ├── orders.csv               # Production orders
+    ├── lines.csv                # Available lines / machines
+    └── vrac_products.csv        # Product metadata (rates, families, etc.)
 
 ---
 
