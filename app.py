@@ -39,8 +39,7 @@ header[data-testid="stHeader"] {
     padding-right: 0.6rem;
     max-width: 100%;
 }
-</style>
-""", unsafe_allow_html=True)
+
 
 # The old CSS block (lines 17-23) should be removed or commented out.
 # ============================ PAGE CONFIG & CSS (END) ============================
