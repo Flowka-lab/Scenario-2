@@ -94,6 +94,7 @@ Orders are:
     ├── lines.csv                # Available lines / machines
     └── vrac_products.csv        # Product metadata (rates, families, etc.)
 
+```
 ---
 
 ## Getting Started
