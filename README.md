@@ -91,3 +91,10 @@ Orders are:
     ├── orders.csv         # Production orders
     ├── lines.csv          # Available lines / machines
     └── vrac_products.csv  # Product metadata (rates, families, etc.)
+
+---
+
+## Getting Started
+
+For a detailed, step-by-step guide (clone → run locally → deploy to Streamlit Cloud → test commands), see:
+👉 [GET_STARTED.md](./GET_STARTED.md)
