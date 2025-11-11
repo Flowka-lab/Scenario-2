@@ -1,6 +1,6 @@
-# 🧭 GET STARTED — Bulk Production Scheduler
+# GET STARTED — Bulk Production Scheduler
 
-## ⚡ TL;DR — Quick Setup in 4 Steps
+##  TL;DR — Quick Setup in 4 Steps
 
 1. **Create a GitHub repository**  
    - Make a new repo on your GitHub (example: `bulk-production-scheduler-demo`)
@@ -25,14 +25,14 @@
      DEEPGRAM_API_KEY = "dg-xxxxxx"
      ```
 
-4. **That’s it — Deploy! 🎉**  
+4. **That’s it — Deploy!**  
    Streamlit will build and run your app automatically.  
    After 1–2 minutes, your demo should be live at:  
    `https://<your-app-name>.streamlit.app`
 
 ---
 
-## 🧩 Full Instructions — For Local or Detailed Setup
+##  Full Instructions — For Local or Detailed Setup
 
 ### A. Prepare the GitHub repository
 
@@ -111,8 +111,8 @@
    - You see a Gantt chart with several orders.
    - Sidebar shows filters (Orders, Products, Machines, Color by).
    - At the bottom you see:
-     - 🧠 Command text box
-     - 🎤 Voice button
+     -  Command text box
+     -  Voice button
 
 ---
 
@@ -148,7 +148,7 @@ If you see an error like “Unsupported intent” or “Unknown order”, check:
 
 > Requires `DEEPGRAM_API_KEY` and a microphone.
 
-1. Click the **🎤 Voice** button.
+1. Click the **Record/voice** button.
 2. Say:
 
    > “Delay order five by thirty minutes.”
@@ -194,16 +194,11 @@ If voice fails:
 
 ---
 
-### F. Share & Demo
+### F. Access & Demo
 
-Now you can:
+Now you can access:
 
-- Add the app URL to:
-  - LinkedIn posts
-  - YouTube video descriptions
-  - Personal portfolio
+  - LinkedIn Link: 
+  - YouTube Demo Link: 
 
-- Use it in live demos:
-  - Talk over the Gantt chart
-  - Type or speak commands
-  - Show how LLMs can enhance the planning experience ✨
+
