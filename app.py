@@ -11,6 +11,18 @@ import altair as alt
 from streamlit_mic_recorder import mic_recorder
 from nlp_extractor import ai_extract_intent
 
+# ============================ HIDE MAIN MENU ============================
+
+import streamlit as st
+
+# CSS to hide the hamburger menu (#MainMenu) and the default footer
+hide_streamlit_style = """
+<style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+</style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 # ============================ PAGE & SECRETS ============================
 
