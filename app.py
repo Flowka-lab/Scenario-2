@@ -1,3 +1,5 @@
+
+
 import os
 import json
 import re
@@ -11,18 +13,46 @@ import altair as alt
 from streamlit_mic_recorder import mic_recorder
 from nlp_extractor import ai_extract_intent
 
-# ============================ HIDE MAIN MENU ============================
 
-import streamlit as st
+# ============================ PAGE CONFIG & CSS (START) ============================
 
-# CSS to hide the hamburger menu (#MainMenu) and the default footer
-hide_streamlit_style = """
+# 1. Start with st.set_page_config()
+st.set_page_config(page_title="Bulk Production Scheduler", layout="wide")
+
+# 2. Add your CSS to hide the main menu, footer, and adjust layout using st.markdown
+# Combining both of your CSS blocks here is the cleanest solution.
+st.markdown("""
 <style>
-#MainMenu {visibility: hidden;}
-footer {visibility: hidden;}
+/* Hides the Streamlit Menu/Hamburger Icon (#MainMenu) and the default footer */
+#MainMenu, footer {
+    visibility: hidden;
+}
+/* Hides the Streamlit Header/Decoration */
+header[data-testid="stHeader"] {
+    display: none;
+}
+/* Optimizes padding for a full-width, minimal-margin experience */
+.main .block-container {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    max-width: 100%;
+}
 </style>
-"""
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+""", unsafe_allow_html=True)
+
+# The old CSS block (lines 17-23) should be removed or commented out.
+# ============================ PAGE CONFIG & CSS (END) ============================
+
+
+# ============================ SECRETS (CONTINUE) ============================
+try:
+    os.environ["OPENAI_API_KEY"] = os.environ.get("OPENAI_API_KEY") or st.secrets["OPENAI_API_KEY"]
+except Exception:
+    pass
+
+# ... rest of your code ...
 
 # ============================ PAGE & SECRETS ============================
 
