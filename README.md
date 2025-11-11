@@ -100,4 +100,4 @@ Orders are:
 ## Getting Started
 
 For a detailed, step-by-step guide (clone → run locally → deploy to Streamlit Cloud → test commands), see:
-👉 [GET_STARTED.md](./GET_STARTED.md)
+👉 [GET_STARTED.md](./get-started.md)
