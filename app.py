@@ -56,23 +56,7 @@ except Exception:
 
 # ============================ PAGE & SECRETS ============================
 
-st.set_page_config(page_title="Bulk Production Scheduler", layout="wide")
 
-st.markdown("""
-<style>
-.main .block-container {
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
-    padding-left: 0.6rem;
-    padding-right: 0.6rem;
-    max-width: 100%;
-}
-header[data-testid="stHeader"] {
-    display: none;
-}
-#MainMenu, footer {
-    visibility: hidden;
-}
 </style>
 """, unsafe_allow_html=True)
 
